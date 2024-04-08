@@ -90,33 +90,13 @@ def render_page_content(pathname):
     if pathname == '/':
 
         sys.path.append("pages")
-        module =  __import__(f'about_me')
         body = module.page_content()
         
         return [
-            dbc.Container(html.H1('about_me')),
+            dbc.Container(html.H1('VideoBop')),
             body
-
         ]
-
-    if pathname == '/Books':
-
-        return [
-            dbc.Container(html.H1('Reading Collection')),
-            ]
-    elif pathname == '/Movies':
-        return [
-            dbc.Container(html.H1('Movie Collection')),
-            ]
-    elif pathname == '/Shapes':
-
-        return [
-            dbc.Container(html.H1('Polar Shapes')),
-        ]
-    elif pathname == '/Digital-Harmony':
-        return [
-            dbc.Container(html.H1('Digital Harmony')),
-        ]
+    
     elif pathname[1:] in pn:
         
         sys.path.append("projects")
@@ -126,7 +106,6 @@ def render_page_content(pathname):
         return [
             dbc.Container(html.H1(pathname[1:])),
             body
-
         ]
 
 

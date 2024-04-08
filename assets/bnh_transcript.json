@@ -1,0 +1,741 @@
+{
+  "text": " The bottoms of my shoes are clean from walking in the rain. In the morning frost the cats step slowly. The tree looks like a dog barking at heaven. Drunk is a hudau, riding letters by thunderstorm. Crossing the football field, coming home from work, the lonely business man. Be why you staring at me. I'm not a flower. The rare beads on the holy book, my knees are cold. After the shower, among the drenched roses, the bird thrashing in the bath.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.98,
+      "end": 5.92,
+      "text": " The bottoms of my shoes are clean from walking in the rain.",
+      "tokens": [
+        50364,
+        440,
+        43413,
+        295,
+        452,
+        6654,
+        366,
+        2541,
+        490,
+        4494,
+        294,
+        264,
+        4830,
+        13,
+        51332
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.26817091773538027,
+      "compression_ratio": 0.921875,
+      "no_speech_prob": 0.046374961733818054,
+      "confidence": 0.936,
+      "words": [
+        {
+          "text": "The",
+          "start": 0.98,
+          "end": 1.24,
+          "confidence": 0.679
+        },
+        {
+          "text": "bottoms",
+          "start": 1.24,
+          "end": 1.62,
+          "confidence": 0.989
+        },
+        {
+          "text": "of",
+          "start": 1.62,
+          "end": 1.84,
+          "confidence": 0.995
+        },
+        {
+          "text": "my",
+          "start": 1.84,
+          "end": 2.1,
+          "confidence": 0.995
+        },
+        {
+          "text": "shoes",
+          "start": 2.1,
+          "end": 2.8,
+          "confidence": 0.996
+        },
+        {
+          "text": "are",
+          "start": 2.8,
+          "end": 3.26,
+          "confidence": 0.982
+        },
+        {
+          "text": "clean",
+          "start": 3.26,
+          "end": 3.92,
+          "confidence": 0.937
+        },
+        {
+          "text": "from",
+          "start": 3.92,
+          "end": 4.36,
+          "confidence": 0.842
+        },
+        {
+          "text": "walking",
+          "start": 4.36,
+          "end": 4.82,
+          "confidence": 0.954
+        },
+        {
+          "text": "in",
+          "start": 4.82,
+          "end": 5.1,
+          "confidence": 0.979
+        },
+        {
+          "text": "the",
+          "start": 5.1,
+          "end": 5.26,
+          "confidence": 0.992
+        },
+        {
+          "text": "rain.",
+          "start": 5.26,
+          "end": 5.92,
+          "confidence": 0.957
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 1936,
+      "start": 38.16,
+      "end": 38.32,
+      "text": " In the morning frost the cats step slowly.",
+      "tokens": [
+        50364,
+        682,
+        264,
+        2446,
+        19623,
+        264,
+        11111,
+        1823,
+        5692,
+        13,
+        51322
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3370837064889761,
+      "compression_ratio": 0.8936170212765957,
+      "no_speech_prob": 0.02562011405825615,
+      "confidence": 0.838,
+      "words": [
+        {
+          "text": "In",
+          "start": 38.16,
+          "end": 38.18,
+          "confidence": 0.778
+        },
+        {
+          "text": "the",
+          "start": 38.18,
+          "end": 38.2,
+          "confidence": 0.996
+        },
+        {
+          "text": "morning",
+          "start": 38.2,
+          "end": 38.22,
+          "confidence": 0.997
+        },
+        {
+          "text": "frost",
+          "start": 38.22,
+          "end": 38.24,
+          "confidence": 0.775
+        },
+        {
+          "text": "the",
+          "start": 38.24,
+          "end": 38.26,
+          "confidence": 0.531
+        },
+        {
+          "text": "cats",
+          "start": 38.26,
+          "end": 38.28,
+          "confidence": 0.871
+        },
+        {
+          "text": "step",
+          "start": 38.28,
+          "end": 38.3,
+          "confidence": 0.886
+        },
+        {
+          "text": "slowly.",
+          "start": 38.3,
+          "end": 38.32,
+          "confidence": 0.992
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 3852,
+      "start": 38.52,
+      "end": 42.7,
+      "text": " The tree looks like a dog barking at heaven.",
+      "tokens": [
+        50364,
+        440,
+        4230,
+        1542,
+        411,
+        257,
+        3000,
+        32995,
+        412,
+        7162,
+        13,
+        50952
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.44928047574799634,
+      "compression_ratio": 1.0930232558139534,
+      "no_speech_prob": 0.14531537890434265,
+      "confidence": 0.966,
+      "words": [
+        {
+          "text": "The",
+          "start": 38.52,
+          "end": 38.62,
+          "confidence": 0.918
+        },
+        {
+          "text": "tree",
+          "start": 38.62,
+          "end": 39.04,
+          "confidence": 0.993
+        },
+        {
+          "text": "looks",
+          "start": 39.04,
+          "end": 39.38,
+          "confidence": 0.985
+        },
+        {
+          "text": "like",
+          "start": 39.38,
+          "end": 39.7,
+          "confidence": 0.994
+        },
+        {
+          "text": "a",
+          "start": 39.7,
+          "end": 39.9,
+          "confidence": 0.997
+        },
+        {
+          "text": "dog",
+          "start": 39.9,
+          "end": 40.3,
+          "confidence": 0.997
+        },
+        {
+          "text": "barking",
+          "start": 40.3,
+          "end": 41.04,
+          "confidence": 0.925
+        },
+        {
+          "text": "at",
+          "start": 41.04,
+          "end": 41.3,
+          "confidence": 0.985
+        },
+        {
+          "text": "heaven.",
+          "start": 41.3,
+          "end": 42.7,
+          "confidence": 0.908
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 3852,
+      "start": 50.12,
+      "end": 53.5,
+      "text": " Drunk as a hoot-owl, writting letters by thunderstorm.",
+      "tokens": [
+        50952,
+        2491,
+        3197,
+        307,
+        257,
+        276,
+        532,
+        1459,
+        11,
+        9546,
+        7825,
+        538,
+        39618,
+        13,
+        51716
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.44928047574799634,
+      "compression_ratio": 1.0930232558139534,
+      "no_speech_prob": 0.14531537890434265,
+      "confidence": 0.617,
+      "words": [
+        {
+          "text": "Drunk",
+          "start": 50.12,
+          "end": 50.46,
+          "confidence": 0.901
+        },
+        {
+          "text": "as",
+          "start": 50.46,
+          "end": 50.62,
+          "confidence": 0.61
+        },
+        {
+          "text": "a",
+          "start": 50.62,
+          "end": 50.76,
+          "confidence": 0.97
+        },
+        {
+          "text": "hoot-owl,",
+          "start": 50.76,
+          "end": 51.52,
+          "confidence": 0.362
+        },
+        {
+          "text": "writing",
+          "start": 51.84,
+          "end": 52.14,
+          "confidence": 0.624
+        },
+        {
+          "text": "letters",
+          "start": 52.14,
+          "end": 52.52,
+          "confidence": 0.834
+        },
+        {
+          "text": "by",
+          "start": 52.52,
+          "end": 52.8,
+          "confidence": 0.995
+        },
+        {
+          "text": "thunderstorm.",
+          "start": 52.8,
+          "end": 53.5,
+          "confidence": 0.418
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 6556,
+      "start": 65.56,
+      "end": 70.46,
+      "text": " Crossing the football field, coming home from work, the lonely business man.",
+      "tokens": [
+        50364,
+        41675,
+        264,
+        7346,
+        2519,
+        11,
+        1348,
+        1280,
+        490,
+        589,
+        11,
+        264,
+        14236,
+        1606,
+        587,
+        13,
+        51214
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.47189125261808695,
+      "compression_ratio": 1.027027027027027,
+      "no_speech_prob": 0.10156173259019852,
+      "confidence": 0.833,
+      "words": [
+        {
+          "text": "Crossing",
+          "start": 65.56,
+          "end": 65.82,
+          "confidence": 0.356
+        },
+        {
+          "text": "the",
+          "start": 65.82,
+          "end": 66.0,
+          "confidence": 0.981
+        },
+        {
+          "text": "football",
+          "start": 66.0,
+          "end": 66.42,
+          "confidence": 0.577
+        },
+        {
+          "text": "field,",
+          "start": 66.42,
+          "end": 67.02,
+          "confidence": 0.984
+        },
+        {
+          "text": "coming",
+          "start": 67.66,
+          "end": 67.76,
+          "confidence": 0.943
+        },
+        {
+          "text": "home",
+          "start": 67.76,
+          "end": 68.02,
+          "confidence": 0.972
+        },
+        {
+          "text": "from",
+          "start": 68.02,
+          "end": 68.22,
+          "confidence": 0.988
+        },
+        {
+          "text": "work,",
+          "start": 68.22,
+          "end": 68.8,
+          "confidence": 0.994
+        },
+        {
+          "text": "the",
+          "start": 69.1,
+          "end": 69.12,
+          "confidence": 0.944
+        },
+        {
+          "text": "lonely",
+          "start": 69.12,
+          "end": 69.44,
+          "confidence": 0.975
+        },
+        {
+          "text": "business",
+          "start": 69.44,
+          "end": 69.9,
+          "confidence": 0.711
+        },
+        {
+          "text": "man.",
+          "start": 69.9,
+          "end": 70.46,
+          "confidence": 0.959
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 8256,
+      "start": 82.6,
+      "end": 85.32,
+      "text": " Bee why you staring at me.  I'm not a flower.",
+      "tokens": [
+        50364,
+        879,
+        983,
+        291,
+        18043,
+        412,
+        385,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.7542728624845806,
+      "compression_ratio": 0.8431372549019608,
+      "no_speech_prob": 0.2928239107131958,
+      "confidence": 0.6,
+      "words": [
+        {
+          "text": "Be",
+          "start": 82.6,
+          "end": 83.02,
+          "confidence": 0.196
+        },
+        {
+          "text": "why",
+          "start": 83.02,
+          "end": 83.72,
+          "confidence": 0.408
+        },
+        {
+          "text": "you",
+          "start": 83.72,
+          "end": 84.0,
+          "confidence": 0.816
+        },
+        {
+          "text": "staring",
+          "start": 84.0,
+          "end": 84.3,
+          "confidence": 0.716
+        },
+        {
+          "text": "at",
+          "start": 84.3,
+          "end": 84.54,
+          "confidence": 0.999
+        },
+        {
+          "text": "me.",
+          "start": 84.54,
+          "end": 85.32,
+          "confidence": 0.996
+        },
+
+        {
+          "text": "I'm",
+          "start": 89.06,
+          "end": 97.5,
+          "confidence": 0.824
+        },
+        {
+          "text": "not",
+          "start": 97.5,
+          "end": 97.52,
+          "confidence": 0.99
+        },
+        {
+          "text": "a",
+          "start": 97.52,
+          "end": 97.54,
+          "confidence": 0.989
+        },
+        {
+          "text": "flower.",
+          "start": 97.54,
+          "end": 97.56,
+          "confidence": 0.903
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 9936,
+      "start": 99.36,
+      "end": 103.22,
+      "text": " Prayer beads on the holy book, my knees are cold.",
+      "tokens": [
+        50364,
+        440,
+        5892,
+        20369,
+        322,
+        264,
+        10622,
+        1446,
+        11,
+        452,
+        10546,
+        366,
+        3554,
+        13,
+        51378
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3755784679103542,
+      "compression_ratio": 1.233009708737864,
+      "no_speech_prob": 0.04758227989077568,
+      "confidence": 0.671,
+      "words": [
+        {
+          "text": "Prayer",
+          "start": 99.36,
+          "end": 99.76,
+          "confidence": 0.146
+        },
+        {
+          "text": "beads",
+          "start": 99.76,
+          "end": 100.34,
+          "confidence": 0.754
+        },
+        {
+          "text": "on",
+          "start": 100.34,
+          "end": 100.58,
+          "confidence": 0.959
+        },
+        {
+          "text": "the",
+          "start": 100.58,
+          "end": 100.72,
+          "confidence": 0.96
+        },
+        {
+          "text": "holy",
+          "start": 100.72,
+          "end": 100.96,
+          "confidence": 0.781
+        },
+        {
+          "text": "book,",
+          "start": 100.96,
+          "end": 101.62,
+          "confidence": 0.97
+        },
+        {
+          "text": "my",
+          "start": 101.82,
+          "end": 101.96,
+          "confidence": 0.616
+        },
+        {
+          "text": "knees",
+          "start": 101.96,
+          "end": 102.28,
+          "confidence": 0.617
+        },
+        {
+          "text": "are",
+          "start": 102.28,
+          "end": 102.48,
+          "confidence": 0.99
+        },
+        {
+          "text": "cold.",
+          "start": 102.48,
+          "end": 103.22,
+          "confidence": 0.994
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 9936,
+      "start": 119.48,
+      "end": 125.44,
+      "text": " After the shower, among the drenched roses, the bird thrashing in the bath.",
+      "tokens": [
+        51378,
+        2381,
+        264,
+        10128,
+        11,
+        3654,
+        264,
+        274,
+        42388,
+        28620,
+        11,
+        264,
+        5255,
+        739,
+        11077,
+        294,
+        264,
+        6079,
+        13,
+        51862
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3755784679103542,
+      "compression_ratio": 1.233009708737864,
+      "no_speech_prob": 0.04758227989077568,
+      "confidence": 0.927,
+      "words": [
+        {
+          "text": "After",
+          "start": 119.48,
+          "end": 119.78,
+          "confidence": 0.734
+        },
+        {
+          "text": "the",
+          "start": 119.78,
+          "end": 120.02,
+          "confidence": 0.984
+        },
+        {
+          "text": "shower,",
+          "start": 120.02,
+          "end": 120.46,
+          "confidence": 0.987
+        },
+        {
+          "text": "among",
+          "start": 121.02,
+          "end": 121.22,
+          "confidence": 0.963
+        },
+        {
+          "text": "the",
+          "start": 121.22,
+          "end": 121.38,
+          "confidence": 0.987
+        },
+        {
+          "text": "drenched",
+          "start": 121.38,
+          "end": 121.82,
+          "confidence": 0.903
+        },
+        {
+          "text": "roses,",
+          "start": 121.82,
+          "end": 122.64,
+          "confidence": 0.992
+        },
+        {
+          "text": "the",
+          "start": 123.28,
+          "end": 123.42,
+          "confidence": 0.99
+        },
+        {
+          "text": "bird",
+          "start": 123.42,
+          "end": 123.76,
+          "confidence": 0.96
+        },
+        {
+          "text": "thrashing",
+          "start": 123.76,
+          "end": 124.68,
+          "confidence": 0.946
+        },
+        {
+          "text": "in",
+          "start": 124.68,
+          "end": 124.94,
+          "confidence": 0.884
+        },
+        {
+          "text": "the",
+          "start": 124.94,
+          "end": 125.08,
+          "confidence": 0.896
+        },
+        {
+          "text": "bath.",
+          "start": 125.08,
+          "end": 125.44,
+          "confidence": 0.869
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}
