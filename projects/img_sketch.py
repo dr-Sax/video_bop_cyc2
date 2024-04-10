@@ -1,12 +1,8 @@
-
-
-
 ##################################################
 # Constants
 ##################################################
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc, Input, Output
-import pandas as pd
 import json
 from astradb import *
 
@@ -103,7 +99,6 @@ def page_content():
         )
         return body
 
-# keys = ['ta1', 'ta2', 'ta3', 'ta4', 'ta5', 'ta6', 'ta7', 'ta8']
 
 def update_sketches(table, inpts):
     session = open_session()
@@ -117,18 +112,6 @@ def update_sketches(table, inpts):
     write_to_table(session, keyspace, table, text_blocks)
 
     close_session(session)
-
-    #  with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'r') as openfile:
-    #     # Reading from json file
-    #     json_object = json.load(openfile)
-    #     for i in range(0, len(inpts)):
-    #         if (inpts[i] in json_object[keys[i]]) or (inpts[i] == ""):
-    #             pass # dont double update
-    #         else:
-    #             json_object[keys[i]].append(inpts[i])
-    
-    #  with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'w') as f:
-    #      json.dump(json_object, f)
 
 # ##################################################
 # # Page Specific Callbacks

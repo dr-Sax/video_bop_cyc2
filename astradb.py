@@ -25,32 +25,16 @@ def read_from_table(session, keyspace, table):
     ann_query = (
         f"SELECT id, haiku, idea_sketch FROM {keyspace}.{table}"
     )
+    res = []
     for row in session.execute(ann_query):
-        print(f"[{row.id}]: {row.haiku}, {row.idea_sketch}")
+        res.append([row.id, row.haiku, row.idea_sketch])
+    return res
 
 def delete_table_values(session, keyspace, table):
-    session.execute(f"DELETE FROM {keyspace}.{table} WHERE id IN (1, 2, 3, 4, 5);")
+    session.execute(f"DELETE FROM {keyspace}.{table} WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8);")
 
 def delete_table(session, keyspace, table):
     session.execute(f"DROP TABLE {keyspace}.{table}")
 
 def close_session(session):
     session.shutdown()
-
-keyspace = "idea_sketches"
-v_dimension = 8
-table = 'nick'
-
-
-
-#session = open_session()
-# delete_table(session, keyspace, 'Alex')
-# write_to_table(session, keyspace, table, text_blocks)
-# read_from_table(session, keyspace, table)
-# delete_table_values(session, keyspace, table)
-# read_from_table(session, keyspace, table)
-
-audience = ['Alex', 'Sebastian', 'Orlando', 'Nathan', 'Jiara', 'Kiki', 'Afure']
-
-
-#read_from_table(session, keyspace, 'Alex')

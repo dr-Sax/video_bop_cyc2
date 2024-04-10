@@ -3,13 +3,12 @@
 ##################################################
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc, Input, Output
-import pandas as pd
-
 import json
+from astradb import *
+
 haiku_list = [] 
 txt_area_list = []
 collective_thoughts = []
-keys = ['ta1', 'ta2', 'ta3', 'ta4', 'ta5', 'ta6', 'ta7', 'ta8']
 
 with open('assets/bnh_transcript.json') as json_data:
     d = json.loads(json_data.read())
@@ -19,18 +18,41 @@ with open('assets/bnh_transcript.json') as json_data:
     json_data.close()
 
 def refresh_thoughts():
-    collective_thoughts = []
-    with open('assets/sketches.json', 'r') as openfile:
-            # Reading from json file
-            json_object = json.load(openfile)
-            for i in range(0, len(keys)):
-                val = json_object[keys[i]]
-                temp = []
-                for j in val:
-                    temp.append(html.H4(j))
-                collective_thoughts.append(temp)
-            json_data.close()
+    collective_thoughts = [[], [], [], [], [], [], [], []]
+    
+    session = open_session()
+    keyspace = "idea_sketches"
+    audience = ['Alex', 'Sebastian', 'Orlando', 'Nathan', 'Jiara', 'Kiki', 'Afure']
+    
+    for a in audience:
+        try:
+            usr_thoughts = read_from_table(session, keyspace, a)
+        except:
+            pass
+        
+        for thought in usr_thoughts:
+            id = thought[0]
+            haiku = thought[1]
+            phrase = thought[2]
+            try:
+                collective_thoughts[id - 1].append(html.H4(phrase))
+            except:
+                pass
+
+    close_session(session)
     return collective_thoughts
+
+#     with open('assets/sketches.json', 'r') as openfile:
+#             # Reading from json file
+#             json_object = json.load(openfile)
+#             for i in range(0, len(keys)):
+#                 val = json_object[keys[i]]
+#                 temp = []
+#                 for j in val:
+#                     temp.append(html.H4(j))
+#                 collective_thoughts.append(temp)
+#             json_data.close()
+#     return collective_thoughts
 
 collective_thoughts = refresh_thoughts()
 
