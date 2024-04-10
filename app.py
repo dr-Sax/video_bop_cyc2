@@ -95,7 +95,6 @@ def render_page_content(pathname):
         
         return [
             dbc.Container(html.H1('VideoBop')),
-            body
         ]
     
     elif pathname[1:] in pn:
