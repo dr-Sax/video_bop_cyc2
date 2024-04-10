@@ -7,8 +7,9 @@
 import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc, Input, Output
 import pandas as pd
-
 import json
+from astradb import *
+
 haiku_list = [] 
 txt_area_list = []
 txt_area_input_list = []
@@ -51,6 +52,32 @@ btn =  dbc.Row(
             style = {"width":"full", "textAlign":"center"}
         ) 
 
+user_select = dbc.Select(
+    id="name-select",
+    required=True,
+    placeholder = "choose your name",
+    options=[
+            {'label': 'Alex', 'value': 'Alex'},
+            {'label': 'Sebastian', 'value': 'Sebastian'},
+            {'label': 'Orlando', 'value': 'Orlando'},
+            {'label': 'Nathan', 'value': 'Nathan'},
+            {'label': 'Jiara', 'value': 'Jiara'},
+            {'label': 'Kiki', 'value': 'Kiki'},
+            {'label': 'Afure', 'value': 'Afure'}],
+)
+
+u_slc =  dbc.Row(
+            children = [
+                html.Div(
+                        user_select
+                )     
+            ],
+
+            style = {"width":"full", "textAlign":"center"}
+        ) 
+
+u_slc_inpt = Input('name-select', 'value')
+
 header =  dbc.Row(
             children = [
                 html.Div(
@@ -69,36 +96,52 @@ header =  dbc.Row(
 def page_content():
         body = dbc.Container(
             [
+                u_slc,
                 btn,
                 header
             ]
         )
         return body
-keys = ['ta1', 'ta2', 'ta3', 'ta4', 'ta5', 'ta6', 'ta7', 'ta8']
-def update_sketches(inpts):
-     with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'r') as openfile:
-        # Reading from json file
-        json_object = json.load(openfile)
-        for i in range(0, len(inpts)):
-            if (inpts[i] in json_object[keys[i]]) or (inpts[i] == ""):
-                pass # dont double update
-            else:
-                json_object[keys[i]].append(inpts[i])
+
+# keys = ['ta1', 'ta2', 'ta3', 'ta4', 'ta5', 'ta6', 'ta7', 'ta8']
+
+def update_sketches(table, inpts):
+    session = open_session()
+    keyspace = "idea_sketches"
+
+    text_blocks = []
+
+    for i in range(0, len(inpts)):
+        text_blocks.append((i + 1, haiku_list[i], inpts[i]))
+
+    write_to_table(session, keyspace, table, text_blocks)
+
+    close_session(session)
+
+    #  with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'r') as openfile:
+    #     # Reading from json file
+    #     json_object = json.load(openfile)
+    #     for i in range(0, len(inpts)):
+    #         if (inpts[i] in json_object[keys[i]]) or (inpts[i] == ""):
+    #             pass # dont double update
+    #         else:
+    #             json_object[keys[i]].append(inpts[i])
     
-     with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'w') as f:
-         json.dump(json_object, f)
+    #  with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'w') as f:
+    #      json.dump(json_object, f)
 
 # ##################################################
 # # Page Specific Callbacks
 # ##################################################    
-inputs = txt_area_input_list + [btn_inpt]
+inputs = txt_area_input_list + [btn_inpt, u_slc_inpt]
 def get_callbacks(app):
     @app.callback(
         Output('idea-sketch-share-btn', 'value'),
         inputs
     )
-    def gen_hilbert_table(i1, i2, i3, i4, i5, i6, i7, i8, btn):
+    def gen_hilbert_table(i1, i2, i3, i4, i5, i6, i7, i8, btn, slc):
         
-        if btn >= 1:
-             update_sketches([i1, i2, i3, i4, i5, i6, i7, i8])
+        if btn >= 1 and slc is not None:
+             update_sketches(slc, [i1, i2, i3, i4, i5, i6, i7, i8])
+             print('hi')
 

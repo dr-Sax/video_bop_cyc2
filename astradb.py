@@ -2,27 +2,55 @@ import os
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
-import requests
+def open_session():
+    session = Cluster(
+        cloud={"secure_connect_bundle": "assets/secure-connect-video-bop.zip"},
+        auth_provider=PlainTextAuthProvider("token", "AstraCS:pJddnCBFdFEzWKTJiPvAQgPu:dc08c258456bf1a4a99bbc878cd79b22621342a8ed0db8a818273f328f937dc2"),
+    ).connect()
 
-params = {
-    'X-Amz-Algorithm': 'AWS4-HMAC-SHA256',
-    'X-Amz-Credential': 'AKIA2AIQRQ76XML7FLD6/20240410/us-east-2/s3/aws4_request',
-    'X-Amz-Date': '20240410T024947Z',
-    'X-Amz-Expires': '300',
-    'X-Amz-SignedHeaders': 'host',
-    'X-Amz-Signature': '5ec7645f76ab30b6ba5c4d2b15b6fdc6a8b783ce3c6f795c179080666bf54b2d',
-}
+    return session
 
-response = requests.get(
-    'https://datastax-cluster-config-prod.s3.us-east-2.amazonaws.com/0f5f4a25-f62d-47e3-9ac4-9bd4f6d0b477-1/secure-connect-video-bop.zip',
-    params=params,
-)
+def create_table(session, keyspace, table):
+    session.execute((f'CREATE TABLE IF NOT EXISTS {keyspace}.{table} (id INT PRIMARY KEY, haiku TEXT, idea_sketch Text);'))
 
-print(response.content)
+def write_to_table(session, keyspace, table, text_blocks):
+    for block in text_blocks:
+        id, text, vector = block
+        session.execute(
+            f"INSERT INTO {keyspace}.{table} (id, haiku, idea_sketch) VALUES (%s, %s, %s)",
+            (id, text, vector)
+        )
+
+def read_from_table(session, keyspace, table):
+    ann_query = (
+        f"SELECT id, haiku, idea_sketch FROM {keyspace}.{table}"
+    )
+    for row in session.execute(ann_query):
+        print(f"[{row.id}]: {row.haiku}, {row.idea_sketch}")
+
+def delete_table_values(session, keyspace, table):
+    session.execute(f"DELETE FROM {keyspace}.{table} WHERE id IN (1, 2, 3, 4, 5);")
+
+def delete_table(session, keyspace, table):
+    session.execute(f"DROP TABLE {keyspace}.{table}")
+
+def close_session(session):
+    session.shutdown()
+
+keyspace = "idea_sketches"
+v_dimension = 8
+table = 'nick'
 
 
 
-session = Cluster(
-    cloud={"secure_connect_bundle": os.environ["ASTRA_DB_SECURE_BUNDLE_PATH"]},
-    auth_provider=PlainTextAuthProvider("token", os.environ["ASTRA_DB_APPLICATION_TOKEN"]),
-).connect()
+#session = open_session()
+# delete_table(session, keyspace, 'Alex')
+# write_to_table(session, keyspace, table, text_blocks)
+# read_from_table(session, keyspace, table)
+# delete_table_values(session, keyspace, table)
+# read_from_table(session, keyspace, table)
+
+audience = ['Alex', 'Sebastian', 'Orlando', 'Nathan', 'Jiara', 'Kiki', 'Afure']
+
+
+#read_from_table(session, keyspace, 'Alex')
