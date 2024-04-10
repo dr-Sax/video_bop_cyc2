@@ -20,7 +20,7 @@ with open('assets/bnh_transcript.json') as json_data:
 
 def refresh_thoughts():
     collective_thoughts = []
-    with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'r') as openfile:
+    with open('assets/sketches.json', 'r') as openfile:
             # Reading from json file
             json_object = json.load(openfile)
             for i in range(0, len(keys)):
