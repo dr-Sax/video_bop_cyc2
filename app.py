@@ -35,7 +35,7 @@ for name in pn:
     try:
         sys.path.append("projects")
         module =  __import__(f'{name}')
-        # module.page_content()
+        module.page_content()
         try:
             module.get_callbacks(app)
         except:
@@ -92,9 +92,6 @@ app.layout = dbc.Container(
 
 def render_page_content(pathname):
     if pathname == '/':
-
-        sys.path.append("pages")
-        body = module.page_content()
         
         return [
             dbc.Container(html.H1('VideoBop')),
@@ -102,7 +99,6 @@ def render_page_content(pathname):
         ]
     
     elif pathname[1:] in pn:
-        
         sys.path.append("projects")
         module =  __import__(f'{pathname[1:]}')
         body = module.page_content()

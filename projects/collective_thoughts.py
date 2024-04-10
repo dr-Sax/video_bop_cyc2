@@ -18,39 +18,47 @@ with open('assets/bnh_transcript.json') as json_data:
         haiku_list.append(seg['text'])
     json_data.close()
 
-with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'r') as openfile:
-        # Reading from json file
-        json_object = json.load(openfile)
-        for i in range(0, len(keys)):
-            val = json_object[keys[i]]
-            temp = []
-            for j in val:
-                temp.append(html.H4(j))
-            collective_thoughts.append(temp)
-        json_data.close()
-            
+def refresh_thoughts():
+    collective_thoughts = []
+    with open('C:/Users/nicor/OneDrive/Documents/Code/video-bop/assets/sketches.json', 'r') as openfile:
+            # Reading from json file
+            json_object = json.load(openfile)
+            for i in range(0, len(keys)):
+                val = json_object[keys[i]]
+                temp = []
+                for j in val:
+                    temp.append(html.H4(j))
+                collective_thoughts.append(temp)
+            json_data.close()
+    return collective_thoughts
 
-rule_fmt = []
-for i in range(0, len(haiku_list)):
-    tmp = [
-    html.Hr(),
-    html.H4(haiku_list[i])
-    ]
+collective_thoughts = refresh_thoughts()
 
-    tmp2 = collective_thoughts[i]
-    
-    rule_fmt += tmp + tmp2
+def update_page(collective_thoughts):
+    rule_fmt = []
+    for i in range(0, len(haiku_list)):
+        tmp = [
+        html.Hr(),
+        html.H4(haiku_list[i])
+        ]
 
-header =  dbc.Row(
-            children = [
-                html.Div(
-                        rule_fmt
-                )
-                
-            ],
+        tmp2 = collective_thoughts[i]
+        
+        rule_fmt += tmp + tmp2
 
-            style = {"width":"10", "textAlign":"left"}
-        ) 
+    header =  dbc.Row(
+                children = [
+                    html.Div(
+                            rule_fmt
+                    )
+                    
+                ],
+
+                style = {"width":"10", "textAlign":"left"}
+            ) 
+    return header
+
+header = update_page(collective_thoughts)
 
 refresh_pg = dbc.Button('Refresh Page', id='rfresh', n_clicks=0)
 btn_inpt = Input('rfresh', 'n_clicks')
@@ -70,11 +78,10 @@ btn =  dbc.Row(
 # Mapping Page Content
 ##################################################     
 def page_content():
+        header = update_page(refresh_thoughts())
         body = dbc.Container(
             [
-                refresh_pg,
                 header 
-
             ]
         )
         return body
@@ -82,13 +89,14 @@ def page_content():
 ##################################################
 # Page Specific Callbacks
 ##################################################    
-def get_callbacks(app):
-    @app.callback(
-        Output('rfresh', 'value'),
-        btn_inpt
+# def get_callbacks(app):
+#     @app.callback(
+#         Output('rfresh', 'value'),
+#         btn_inpt
         
-    )
-    def refresh(i1):
+#     )
+#     def refresh(i1):
         
-        if i1 >= 1:
-             print('hi')
+#         if i1 >= 1:
+#              a = refresh_thoughts()
+#              b = update_page(a)

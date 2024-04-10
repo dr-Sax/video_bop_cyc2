@@ -101,5 +101,4 @@ def get_callbacks(app):
         
         if btn >= 1:
              update_sketches([i1, i2, i3, i4, i5, i6, i7, i8])
-             print(i1, i2, i3, i4, i5, i6, i7, i8)
 
