@@ -5,6 +5,31 @@ import dash_bootstrap_components as dbc
 from dash import Dash, html, dcc, Input, Output
 import pandas as pd
 
+import json
+haiku_list = [] 
+txt_area_list = []
+
+with open('assets/bnh_transcript.json') as json_data:
+    d = json.loads(json_data.read())
+
+    segments = d['segments']
+    for seg in segments:
+        haiku_list.append(seg['text'])
+        ta = dcc.Textarea(id= f'{seg["text"]}',value = '', style={'width': '100%', 'height': 50})
+        txt_area_list.append(ta)
+
+    json_data.close()
+
+rule_fmt = []
+for i in range(0, len(haiku_list)):
+    tmp = [
+    html.Hr(),
+    html.H4(haiku_list[i]),
+    txt_area_list[i]
+    ]
+    
+    rule_fmt += tmp
+
 ##################################################
 # Constants
 ##################################################
@@ -32,8 +57,7 @@ header =  dbc.Row(
                         html.Hr(),
                         html.H4(p1),
                         html.Hr(),
-                        dbc.Col(
-                        )
+                        rule_fmt
                     ]
                 )
                 

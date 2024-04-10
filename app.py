@@ -35,7 +35,10 @@ for name in pn:
         sys.path.append("projects")
         module =  __import__(f'{name}')
         # module.page_content()
-        # module.get_callbacks(app)
+        try:
+            module.get_callbacks(app)
+        except:
+            pass
         obj = dbc.NavItem(dbc.NavLink(f"{name}", href = f"/{name}", active = 'exact'))
         navbar_headings.append(obj)
     except:
