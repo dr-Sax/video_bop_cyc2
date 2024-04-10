@@ -16,7 +16,7 @@ import sys
 from site_automations import project_dropdown, project_names
 
 
-app = Dash(__name__)  #, external_stylesheets = [dbc.themes.QUARTZ])
+app = Dash(__name__, suppress_callback_exceptions = True)  #, external_stylesheets = [dbc.themes.QUARTZ])
 server = app.server
 
 #####################################
