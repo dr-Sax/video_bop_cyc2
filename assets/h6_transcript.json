@@ -1,0 +1,99 @@
+{
+  "text": " Bee why are you staring at me Im not a flower",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 1.6,
+      "end": 3.74,
+      "text": " Bee why are you staring at me Im not a flower",
+      "tokens": [
+        50364,
+        879,
+        11,
+        983,
+        366,
+        291,
+        18043,
+        412,
+        385,
+        30,
+        50564
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.43071136474609373,
+      "compression_ratio": 0.8571428571428571,
+      "no_speech_prob": 0.04858819767832756,
+      "confidence": 0.85,
+      "words": [
+        {
+          "text": "Bee",
+          "start": 1.6,
+          "end": 1.98,
+          "confidence": 0.406
+        },
+        {
+          "text": "why",
+          "start": 2.46,
+          "end": 2.66,
+          "confidence": 0.971
+        },
+        {
+          "text": "are",
+          "start": 2.66,
+          "end": 2.9,
+          "confidence": 0.832
+        },
+        {
+          "text": "you",
+          "start": 2.9,
+          "end": 2.92,
+          "confidence": 0.995
+        },
+        {
+          "text": "staring",
+          "start": 2.92,
+          "end": 3.22,
+          "confidence": 0.993
+        },
+        {
+          "text": "at",
+          "start": 3.22,
+          "end": 3.46,
+          "confidence": 1.0
+        },
+        {
+          "text": "me",
+          "start": 3.46,
+          "end": 3.74,
+          "confidence": 0.992
+        },
+        {
+          "text": "Im",
+          "start": 4.4,
+          "end": 4.62,
+          "confidence": 0.956
+        },
+        {
+          "text": "not",
+          "start": 4.62,
+          "end": 4.78,
+          "confidence": 0.995
+        },
+        {
+          "text": "a",
+          "start": 4.78,
+          "end": 4.9,
+          "confidence": 0.994
+        },
+        {
+          "text": "flower",
+          "start": 4.9,
+          "end": 5.24,
+          "confidence": 0.894
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

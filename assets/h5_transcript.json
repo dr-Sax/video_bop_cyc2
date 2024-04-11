@@ -1,0 +1,111 @@
+{
+  "text": " Crossing the football field coming home from work the lonely business man",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 1.34,
+      "end": 6.32,
+      "text": " Crossing the football field coming home from work the lonely business man",
+      "tokens": [
+        50364,
+        41675,
+        264,
+        7346,
+        2519,
+        11,
+        1348,
+        1280,
+        490,
+        589,
+        11,
+        264,
+        14236,
+        1606,
+        587,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.39006100760565865,
+      "compression_ratio": 1.027027027027027,
+      "no_speech_prob": 0.025916988030076027,
+      "confidence": 0.877,
+      "words": [
+        {
+          "text": "Crossing",
+          "start": 1.34,
+          "end": 1.74,
+          "confidence": 0.513
+        },
+        {
+          "text": "the",
+          "start": 1.74,
+          "end": 1.96,
+          "confidence": 0.983
+        },
+        {
+          "text": "football",
+          "start": 1.96,
+          "end": 2.34,
+          "confidence": 0.919
+        },
+        {
+          "text": "field",
+          "start": 2.34,
+          "end": 2.98,
+          "confidence": 0.99
+        },
+        {
+          "text": "coming",
+          "start": 3.6,
+          "end": 3.7,
+          "confidence": 0.907
+        },
+        {
+          "text": "home",
+          "start": 3.7,
+          "end": 3.92,
+          "confidence": 0.991
+        },
+        {
+          "text": "from",
+          "start": 3.92,
+          "end": 4.18,
+          "confidence": 0.983
+        },
+        {
+          "text": "work",
+          "start": 4.18,
+          "end": 4.66,
+          "confidence": 0.985
+        },
+        {
+          "text": "the",
+          "start": 4.96,
+          "end": 5.02,
+          "confidence": 0.705
+        },
+        {
+          "text": "lonely",
+          "start": 5.02,
+          "end": 5.36,
+          "confidence": 0.934
+        },
+        {
+          "text": "business",
+          "start": 5.36,
+          "end": 5.82,
+          "confidence": 0.87
+        },
+        {
+          "text": "man",
+          "start": 5.82,
+          "end": 6.32,
+          "confidence": 0.91
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

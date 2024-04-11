@@ -1,0 +1,120 @@
+{
+  "text": " After the shower among the drenched roses the bird thrashing in the bath",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 1.38,
+      "end": 7.3,
+      "text": " After the shower among the drenched roses the bird thrashing in the bath",
+      "tokens": [
+        50364,
+        2381,
+        264,
+        10128,
+        11,
+        3654,
+        264,
+        274,
+        42388,
+        28620,
+        11,
+        264,
+        5255,
+        739,
+        11077,
+        294,
+        264,
+        6079,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3197455633254278,
+      "compression_ratio": 1.0714285714285714,
+      "no_speech_prob": 0.01418046560138464,
+      "confidence": 0.903,
+      "words": [
+        {
+          "text": "After",
+          "start": 1.38,
+          "end": 1.66,
+          "confidence": 0.717
+        },
+        {
+          "text": "the",
+          "start": 1.66,
+          "end": 1.92,
+          "confidence": 0.985
+        },
+        {
+          "text": "shower",
+          "start": 1.92,
+          "end": 2.32,
+          "confidence": 0.981
+        },
+        {
+          "text": "among",
+          "start": 3.0,
+          "end": 3.12,
+          "confidence": 0.966
+        },
+        {
+          "text": "the",
+          "start": 3.12,
+          "end": 3.3,
+          "confidence": 0.982
+        },
+        {
+          "text": "drenched",
+          "start": 3.3,
+          "end": 3.74,
+          "confidence": 0.873
+        },
+        {
+          "text": "roses",
+          "start": 3.74,
+          "end": 4.5,
+          "confidence": 0.982
+        },
+        {
+          "text": "the",
+          "start": 5.18,
+          "end": 5.3,
+          "confidence": 0.897
+        },
+        {
+          "text": "bird",
+          "start": 5.3,
+          "end": 5.66,
+          "confidence": 0.962
+        },
+        {
+          "text": "thrashing",
+          "start": 5.66,
+          "end": 6.6,
+          "confidence": 0.944
+        },
+        {
+          "text": "in",
+          "start": 6.6,
+          "end": 6.84,
+          "confidence": 0.841
+        },
+        {
+          "text": "the",
+          "start": 6.84,
+          "end": 6.98,
+          "confidence": 0.786
+        },
+        {
+          "text": "bath",
+          "start": 6.98,
+          "end": 7.3,
+          "confidence": 0.862
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

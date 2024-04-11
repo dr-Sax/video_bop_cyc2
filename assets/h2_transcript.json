@@ -1,0 +1,81 @@
+{
+  "text": " In the morning frost the cats step slowly",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 1.18,
+      "end": 5.12,
+      "text": " In the morning frost the cats step slowly",
+      "tokens": [
+        50364,
+        682,
+        264,
+        2446,
+        19623,
+        264,
+        11111,
+        1823,
+        5692,
+        13,
+        51264
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.5916001796722412,
+      "compression_ratio": 0.8936170212765957,
+      "no_speech_prob": 0.01580701395869255,
+      "confidence": 0.784,
+      "words": [
+        {
+          "text": "In",
+          "start": 1.18,
+          "end": 1.36,
+          "confidence": 0.45
+        },
+        {
+          "text": "the",
+          "start": 1.36,
+          "end": 1.52,
+          "confidence": 0.996
+        },
+        {
+          "text": "morning",
+          "start": 1.52,
+          "end": 1.86,
+          "confidence": 0.986
+        },
+        {
+          "text": "frost",
+          "start": 1.86,
+          "end": 2.62,
+          "confidence": 0.843
+        },
+        {
+          "text": "the",
+          "start": 2.62,
+          "end": 3.16,
+          "confidence": 0.54
+        },
+        {
+          "text": "cats",
+          "start": 3.16,
+          "end": 3.66,
+          "confidence": 0.858
+        },
+        {
+          "text": "step",
+          "start": 3.66,
+          "end": 4.42,
+          "confidence": 0.835
+        },
+        {
+          "text": "slowly",
+          "start": 4.42,
+          "end": 5.12,
+          "confidence": 0.989
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

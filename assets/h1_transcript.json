@@ -1,0 +1,109 @@
+{
+  "text": " The bottoms of my shoes are clean from walking in the rain",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 0.98,
+      "end": 5.72,
+      "text": " The bottoms of my shoes are clean from walking in the rain",
+      "tokens": [
+        50364,
+        440,
+        43413,
+        295,
+        452,
+        6654,
+        366,
+        2541,
+        490,
+        4494,
+        294,
+        264,
+        4830,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.3607289493083954,
+      "compression_ratio": 0.921875,
+      "no_speech_prob": 0.012302772141993046,
+      "confidence": 0.931,
+      "words": [
+        {
+          "text": "The",
+          "start": 0.98,
+          "end": 1.16,
+          "confidence": 0.67
+        },
+        {
+          "text": "bottoms",
+          "start": 1.16,
+          "end": 1.62,
+          "confidence": 0.988
+        },
+        {
+          "text": "of",
+          "start": 1.62,
+          "end": 1.84,
+          "confidence": 0.995
+        },
+        {
+          "text": "my",
+          "start": 1.84,
+          "end": 2.14,
+          "confidence": 0.995
+        },
+        {
+          "text": "shoes",
+          "start": 2.14,
+          "end": 2.82,
+          "confidence": 0.996
+        },
+        {
+          "text": "are",
+          "start": 2.82,
+          "end": 3.24,
+          "confidence": 0.974
+        },
+        {
+          "text": "clean",
+          "start": 3.24,
+          "end": 3.94,
+          "confidence": 0.937
+        },
+        {
+          "text": "from",
+          "start": 3.94,
+          "end": 4.36,
+          "confidence": 0.805
+        },
+        {
+          "text": "walking",
+          "start": 4.36,
+          "end": 4.82,
+          "confidence": 0.955
+        },
+        {
+          "text": "in",
+          "start": 4.82,
+          "end": 5.1,
+          "confidence": 0.961
+        },
+        {
+          "text": "the",
+          "start": 5.1,
+          "end": 5.26,
+          "confidence": 0.99
+        },
+        {
+          "text": "rain",
+          "start": 5.26,
+          "end": 5.72,
+          "confidence": 0.971
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

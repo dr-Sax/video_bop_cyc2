@@ -1,0 +1,89 @@
+{
+  "text": " Drunk as a hoot-owl writing letters by Thundestorm",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 1.08,
+      "end": 4.62,
+      "text": " Drunk as a hoot-owl writing letters by Thundestorm",
+      "tokens": [
+        50364,
+        2491,
+        3197,
+        382,
+        257,
+        276,
+        1861,
+        64,
+        425,
+        11,
+        3579,
+        7825,
+        538,
+        334,
+        997,
+        377,
+        1865,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.7083987712860107,
+      "compression_ratio": 0.864406779661017,
+      "no_speech_prob": 0.07570812851190567,
+      "confidence": 0.557,
+      "words": [
+        {
+          "text": "Drunk",
+          "start": 1.08,
+          "end": 1.4,
+          "confidence": 0.698
+        },
+        {
+          "text": "as",
+          "start": 1.4,
+          "end": 1.58,
+          "confidence": 0.624
+        },
+        {
+          "text": "a",
+          "start": 1.58,
+          "end": 1.7,
+          "confidence": 0.925
+        },
+        {
+          "text": "hoot-owl",
+          "start": 1.7,
+          "end": 2.6,
+          "confidence": 0.359
+        },
+        {
+          "text": "writing",
+          "start": 2.9,
+          "end": 3.12,
+          "confidence": 0.663
+        },
+        {
+          "text": "letters",
+          "start": 3.12,
+          "end": 3.48,
+          "confidence": 0.989
+        },
+        {
+          "text": "by",
+          "start": 3.48,
+          "end": 3.76,
+          "confidence": 0.981
+        },
+        {
+          "text": "Thundestorm",
+          "start": 3.76,
+          "end": 4.62,
+          "confidence": 0.477
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

@@ -1,0 +1,96 @@
+{
+  "text": " Prayer beads on the Holy Book my knees are cold",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 1.22,
+      "end": 4.86,
+      "text": " Prayer beads on the Holy Book my knees are cold",
+      "tokens": [
+        50364,
+        45226,
+        20369,
+        322,
+        264,
+        6295,
+        9476,
+        11,
+        452,
+        10546,
+        366,
+        3554,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.6159356435139974,
+      "compression_ratio": 0.8596491228070176,
+      "no_speech_prob": 0.0922531709074974,
+      "confidence": 0.73,
+      "words": [
+        {
+          "text": "Prayer",
+          "start": 1.22,
+          "end": 1.7,
+          "confidence": 0.411
+        },
+        {
+          "text": "beads",
+          "start": 1.7,
+          "end": 2.22,
+          "confidence": 0.761
+        },
+        {
+          "text": "on",
+          "start": 2.22,
+          "end": 2.54,
+          "confidence": 0.904
+        },
+        {
+          "text": "the",
+          "start": 2.54,
+          "end": 2.68,
+          "confidence": 0.863
+        },
+        {
+          "text": "Holy",
+          "start": 2.68,
+          "end": 2.86,
+          "confidence": 0.705
+        },
+        {
+          "text": "Book",
+          "start": 2.86,
+          "end": 3.5,
+          "confidence": 0.925
+        },
+        {
+          "text": "my",
+          "start": 3.74,
+          "end": 3.88,
+          "confidence": 0.599
+        },
+        {
+          "text": "knees",
+          "start": 3.88,
+          "end": 4.18,
+          "confidence": 0.462
+        },
+        {
+          "text": "are",
+          "start": 4.18,
+          "end": 4.4,
+          "confidence": 0.983
+        },
+        {
+          "text": "cold",
+          "start": 4.4,
+          "end": 4.86,
+          "confidence": 0.996
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}

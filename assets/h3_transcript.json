@@ -1,0 +1,88 @@
+{
+  "text": " The tree looks like a dog barking at heaven",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 2.4,
+      "end": 5.68,
+      "text": " The tree looks like a dog barking at heaven",
+      "tokens": [
+        50364,
+        440,
+        4230,
+        1542,
+        411,
+        257,
+        3000,
+        32995,
+        412,
+        7162,
+        13,
+        50714
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.39660028310922474,
+      "compression_ratio": 0.8461538461538461,
+      "no_speech_prob": 0.036104485392570496,
+      "confidence": 0.945,
+      "words": [
+        {
+          "text": "The",
+          "start": 2.4,
+          "end": 2.58,
+          "confidence": 0.765
+        },
+        {
+          "text": "tree",
+          "start": 2.58,
+          "end": 3.0,
+          "confidence": 0.986
+        },
+        {
+          "text": "looks",
+          "start": 3.0,
+          "end": 3.34,
+          "confidence": 0.986
+        },
+        {
+          "text": "like",
+          "start": 3.34,
+          "end": 3.56,
+          "confidence": 0.998
+        },
+        {
+          "text": "a",
+          "start": 3.56,
+          "end": 3.86,
+          "confidence": 0.998
+        },
+        {
+          "text": "dog",
+          "start": 3.86,
+          "end": 4.26,
+          "confidence": 0.996
+        },
+        {
+          "text": "barking",
+          "start": 4.26,
+          "end": 4.98,
+          "confidence": 0.952
+        },
+        {
+          "text": "at",
+          "start": 4.98,
+          "end": 5.28,
+          "confidence": 0.982
+        },
+        {
+          "text": "heaven",
+          "start": 5.28,
+          "end": 5.68,
+          "confidence": 0.872
+        }
+      ]
+    }
+  ],
+  "language": "en"
+}
