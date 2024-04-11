@@ -11,27 +11,27 @@ def open_session():
     return session
 
 def create_table(session, keyspace, table):
-    session.execute((f'CREATE TABLE IF NOT EXISTS {keyspace}.{table} (id INT PRIMARY KEY, haiku TEXT, idea_sketch Text);'))
+    session.execute((f'CREATE TABLE IF NOT EXISTS {keyspace}.{table} (id INT PRIMARY KEY, url TEXT, start_time Text, start_word Text, end_word Text);'))
 
 def write_to_table(session, keyspace, table, text_blocks):
     for block in text_blocks:
-        id, text, vector = block
+        id, url, start_time, start_word, end_word = block
         session.execute(
-            f"INSERT INTO {keyspace}.{table} (id, haiku, idea_sketch) VALUES (%s, %s, %s)",
-            (id, text, vector)
+            f"INSERT INTO {keyspace}.{table} (id, url, start_time, start_word, end_word) VALUES (%s, %s, %s, %s, %s)",
+            (id, url, start_time, start_word, end_word)
         )
 
 def read_from_table(session, keyspace, table):
     ann_query = (
-        f"SELECT id, haiku, idea_sketch FROM {keyspace}.{table}"
+        f"SELECT id, url, start_time, start_word, end_word FROM {keyspace}.{table}"
     )
     res = []
     for row in session.execute(ann_query):
-        res.append([row.id, row.haiku, row.idea_sketch])
+        res.append([row.id, row.url, row.start_time, row.start_word, row.end_word])
     return res
 
 def delete_table_values(session, keyspace, table):
-    session.execute(f"DELETE FROM {keyspace}.{table} WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8);")
+    session.execute(f"DELETE FROM {keyspace}.{table} WHERE id IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);")
 
 def delete_table(session, keyspace, table):
     session.execute(f"DROP TABLE {keyspace}.{table}")
