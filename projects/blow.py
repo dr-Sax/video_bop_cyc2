@@ -186,7 +186,7 @@ def get_callbacks(app):
             text_blocks = []
 
             for i in range(0, len(url_inpts)):
-                text_blocks.append((i, url_inpts[i], strt_time_inpts[i], strt_word_inpts[i], end_word_inpts[i]))
+                text_blocks.append((i + 1, url_inpts[i], strt_time_inpts[i], strt_word_inpts[i], end_word_inpts[i]))
 
             write_to_table(session, keyspace, table, text_blocks)
             
